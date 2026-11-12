@@ -354,6 +354,8 @@ def _compute(
         Grid of coordinates to evaluate at.
     component : str, optional
         For vector variables, which element to plot. Default is the norm of the vector.
+    reshape : bool, optional
+        Whether to reshape the output to (M, L, N). Default is True.
     compute_kwargs : dict, optional
         Additional keyword arguments to pass to ``eq.compute``
 

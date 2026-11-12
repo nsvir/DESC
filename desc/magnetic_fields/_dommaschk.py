@@ -175,24 +175,31 @@ class DommaschkPotentialField(ScalarPotentialField):
 
         Parameters
         ----------
-        field (MagneticField or callable or ndarray): magnetic field to fit
-            if callable, must accept (num_nodes,3) array of rpz coords as argument
-                and output (num_nodes,3) as the B field in cylindrical rpz basis.
-            if ndarray, must be an ndarray of the magnetic field in rpz,
-                of shape (num_nodes,3) with the columns being (B_R, B_phi, B_Z)
-        coords (ndarray): shape (num_nodes,3) of R,phi,Z points to fit field at
-        max_m (int): maximum m to use for Dommaschk Potentials, within one field period
+        field : MagneticField or callable or ndarray
+            magnetic field to fit.
+            If callable, must accept (num_nodes,3) array of rpz coords as argument
+            and output (num_nodes,3) as the B field in cylindrical rpz basis.
+            If ndarray, must be an ndarray of the magnetic field in rpz,
+            of shape (num_nodes,3) with the columns being (B_R, B_phi, B_Z)
+        coords : ndarray, shape(num_nodes,3)
+            R,phi,Z points to fit field at
+        max_m : int
+            maximum m to use for Dommaschk Potentials, within one field period
             i.e. if NFP= 2 and max_m = 3, then modes with arguments up to 3*2*phi will
             be included
-        max_l (int): maximum l to use for Dommaschk Potentials
-        sym (bool): if field is stellarator symmetric or not.
+        max_l : int
+            maximum l to use for Dommaschk Potentials
+        sym : bool, optional
+            if field is stellarator symmetric or not.
             if True, only stellarator-symmetric modes will
             be included in the fitting
-        NFP (int): if the field being fit has a discrete toroidal symmetry
+        verbose : int, optional
+            verbosity level of fitting routine, > 0 prints residuals,
+            >1 prints timing info
+        NFP : int, optional
+            if the field being fit has a discrete toroidal symmetry
             with field period NFP. This will only allow Dommaschk m modes
             that are integer multiples of NFP.
-        verbose (int): verbosity level of fitting routine, > 0 prints residuals,
-             >1 prints timing info
         chunk_size : int or None
             Size to split computation into chunks of evaluation points.
             If no chunking should be done or the chunk size is the full input

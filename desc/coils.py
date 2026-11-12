@@ -2481,14 +2481,14 @@ class CoilSet(OptimizableCollection, _Coil, MutableSequence[_CoilT]):
 
         Parameters
         ----------
-        filename : str or path-like
+        coilsFilename : str or path-like
             path save CoilSet as a file in MAKEGRID txt format
         NFP : int, default None
             If > 1, assumes that the CoilSet is the coils for a coilset
             with a nominal discrete toroidal symmetry of NFP, and will
             put that NFP in the periods line of the coils file generated.
             defaults to 1
-        grid: Grid, ndarray, int,
+        grid : Grid, ndarray, int,
             Grid of sample points along each coil to save.
             if None, will default to the coil compute functions's
             default grid

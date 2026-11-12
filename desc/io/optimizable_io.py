@@ -356,18 +356,20 @@ def reader_factory(load_from, file_format):
 
 
 def writer_factory(file_name, file_format, file_mode="w"):
-    """Select and return instance of appropriate reader class for given file format.
+    """Select and return instance of appropriate writer class for given file format.
 
     Parameters
     ----------
-    load_from : str or file instance
-        file path or instance from which to read
+    file_name : str or file instance
+        file path or instance to write to
     file_format : str
-        format of file to be read
+        format of file to be written
+    file_mode : str, optional
+        mode in which to open the file. Default is ``'w'``.
 
     Returns
     -------
-    Reader instance
+    Writer instance
 
     """
     if file_format == "hdf5":

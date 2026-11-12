@@ -515,9 +515,7 @@ class Equilibrium(IOAble, Optimizable):
 
         Parameters
         ----------
-        eq : Equilibrium
-            Equilibrium to initialize
-        args :
+        *args : tuple
             either:
               - No arguments, in which case eq.surface will be scaled for the guess.
               - Another Surface object, which will be scaled to generate the guess.
@@ -2784,8 +2782,6 @@ class EquilibriaFamily(IOAble, MutableSequence):
 
         Parameters
         ----------
-        eqfam : EquilibriaFamily or list of Equilibria
-            Equilibria to solve for at each step.
         objective : str or ObjectiveFunction (optional)
             function to solve for equilibrium solution
         optimizer : str or Optimizer (optional)

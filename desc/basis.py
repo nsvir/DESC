@@ -1418,9 +1418,6 @@ class ChebyshevPolynomial(_Basis):
             Order of derivatives to compute in (rho,theta,zeta).
         modes : ndarray of in, shape(num_modes,3), optional
             Basis modes to evaluate (if None, full basis is used)
-        unique : bool, optional
-            whether to reduce workload by only calculating for unique values of nodes,
-            modes can be faster, but doesn't work with jit or autodiff
 
         Returns
         -------

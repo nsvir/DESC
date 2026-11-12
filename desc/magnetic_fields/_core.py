@@ -916,11 +916,11 @@ class MagneticFieldFromUser(_MagneticField, Optimizable):
 class ScaledMagneticField(_MagneticField, Optimizable):
     """Magnetic field scaled by a scalar value.
 
-    ie B_new = scalar * B_old
+    ie B_new = scale * B_old
 
     Parameters
     ----------
-    scalar : float, int
+    scale : float, int
         scaling factor for magnetic field
     field : MagneticField
         base field to be scaled
@@ -1729,7 +1729,7 @@ class SplineMagneticField(_MagneticField, Optimizable):
         vertical magnetic field on grid
     AR : array-like, shape(NR,Nphi,NZ,Ngroups)
         radial magnetic vector potential on grid, optional
-    aphi : array-like, shape(NR,Nphi,NZ,Ngroups)
+    Aphi : array-like, shape(NR,Nphi,NZ,Ngroups)
         toroidal magnetic vector potential on grid, optional
     AZ : array-like, shape(NR,Nphi,NZ,Ngroups)
         vertical magnetic vector potential on grid, optional

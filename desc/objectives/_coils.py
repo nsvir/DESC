@@ -1483,7 +1483,7 @@ class CoilArclengthVariance(_CoilObjective):
 
     Parameters
     ----------
-    coil : CoilSet or Coil
+    coils : CoilSet or Coil
         Coil(s) that are to be optimized
     grid : Grid, optional
         Collocation grid containing the nodes to evaluate at.

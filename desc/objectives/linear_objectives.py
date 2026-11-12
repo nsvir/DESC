@@ -606,8 +606,6 @@ class BoundaryZSelfConsistency(_Objective):
 
         Parameters
         ----------
-        eq : Equilibrium, optional
-            Equilibrium that will be optimized to satisfy the Objective.
         use_jit : bool, optional
             Whether to just-in-time compile the objective and derivatives.
         verbose : int, optional
@@ -1845,16 +1843,14 @@ class FixSumModesLambda(_FixedObjective):
         Has no effect for this objective.
     normalize_target : bool, optional
         Has no effect for this objective.
-    sum_weight : float, ndarray, optional
+    sum_weights : float, ndarray, optional
         Weights on the coefficients in the sum, should be same length as modes.
         Defaults to 1 i.e. target = 1*L_111 + 1*L_222...
     modes : ndarray, optional
         Basis modes numbers [l,m,n] of Fourier-Zernike modes to fix sum of.
-        len(weight) = len(modes).
+        len(sum_weights) = len(modes).
         If True uses all of the Equilibrium's modes.
         Must be either True or specified as an array
-    surface_label : float
-        Surface to enforce boundary conditions on. Defaults to Equilibrium.surface.rho
     name : str
         Name of the objective function.
 
@@ -2416,8 +2412,6 @@ class FixElectronDensity(FixParameters):
         Whether target and bounds should be normalized before comparing to computed
         values. If `normalize` is `True` and the target is in physical units,
         this should also be set to True.
-    profile : Profile, optional
-        Profile containing the radial modes to evaluate at.
     indices : ndarray or bool, optional
         indices of the Profile.params array to fix.
         (e.g. indices corresponding to modes for a PowerSeriesProfile or indices

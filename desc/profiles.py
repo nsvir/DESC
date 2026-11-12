@@ -1402,6 +1402,8 @@ class FourierZernikeProfile(_Profile):
         If None, assumes params are only the m=0 n=0 modes
     sym : {"auto", "sin", "cos", False}
         Whether the basis should be stellarator symmetric.
+    NFP : int
+        number of field periods
     name : str
         name of the profile.
 
