@@ -36,3 +36,11 @@ jobs:
       - name: Check public API matches docs
         if: ${{ !cancelled() }}
         run: python devtools/check_public_api.py
+
+      # Installed here rather than in dev-requirements.txt so its flake8
+      # plugin doesn't affect the flake8 step above.
+      - name: Check docstring parameters match signatures
+        if: ${{ !cancelled() }}
+        run: |
+          pip install pydoclint==0.12.0
+          pydoclint desc/
