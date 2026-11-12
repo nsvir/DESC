@@ -29,7 +29,9 @@ from desc.magnetic_fields import (
     OmnigenousField,
     PoloidalMagneticField,
     ScalarPotentialField,
+    ScaledMagneticField,
     SplineMagneticField,
+    SumMagneticField,
     ToroidalMagneticField,
     VectorPotentialField,
     VerticalMagneticField,
@@ -1538,6 +1540,30 @@ class TestMagneticFields:
         np.testing.assert_allclose(
             foo(field, x), np.array([[0, -0.671, 0.0858]]), rtol=1e-3, atol=1e-8
         )
+
+    @pytest.mark.unit
+    def test_scaled_and_sum_field_save_and_load(self, tmpdir_factory):
+        """Test ScaledMagneticField and SumMagneticField round trip through file."""
+        tmpdir = tmpdir_factory.mktemp("scaled_sum_field_dir")
+        coords = np.array([[1.0, 0.3, 0.1], [1.5, -1.0, -0.2]])
+
+        scaled = ScaledMagneticField(2.5, ToroidalMagneticField(B0=1, R0=1))
+        summed = SumMagneticField(
+            [ToroidalMagneticField(B0=1, R0=1), VerticalMagneticField(B0=0.2)]
+        )
+        for name, field in [("scaled", scaled), ("sum", summed)]:
+            path = str(tmpdir.join(name + ".h5"))
+            field.save(path)
+            loaded = load(path)
+            assert type(loaded) is type(field)
+            assert loaded.optimizable_params == field.optimizable_params
+            np.testing.assert_allclose(
+                loaded.compute_magnetic_field(coords),
+                field.compute_magnetic_field(coords),
+            )
+        assert loaded.equiv(summed)
+        loaded_scaled = load(str(tmpdir.join("scaled.h5")))
+        assert loaded_scaled.scale == scaled.scale
 
     @pytest.mark.unit
     def test_mgrid_io(self, tmpdir_factory):

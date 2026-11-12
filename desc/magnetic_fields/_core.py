@@ -927,7 +927,7 @@ class ScaledMagneticField(_MagneticField, Optimizable):
 
     """
 
-    _io_attrs = _MagneticField._io_attrs_ + ["_field", "_scalar"]
+    _io_attrs_ = _MagneticField._io_attrs_ + ["_field", "_scale"]
     _static_attrs = _MagneticField._static_attrs + Optimizable._static_attrs
 
     def __init__(self, scale, field):
@@ -939,8 +939,12 @@ class ScaledMagneticField(_MagneticField, Optimizable):
         )
         object.__setattr__(self, "_scale", scale)
         object.__setattr__(self, "_field", field)
+        self._set_up()
+
+    def _set_up(self):
+        # also called after loading from file, since _optimizable_params isn't saved
         object.__setattr__(
-            self, "_optimizable_params", field.optimizable_params + ["scale"]
+            self, "_optimizable_params", self._field.optimizable_params + ["scale"]
         )
 
     @optimizable_parameter
@@ -955,12 +959,14 @@ class ScaledMagneticField(_MagneticField, Optimizable):
 
     # want this class to pretend like its the underlying field
     def __getattr__(self, attr):
-        if attr in ["_scale", "_optimizable_params"]:
-            return getattr(self, attr)
+        # only called when normal lookup fails, so these aren't set yet
+        # (e.g. while loading from file); don't recurse into self._field
+        if attr in ["_field", "_scale", "_optimizable_params"]:
+            raise AttributeError(attr)
         return getattr(self._field, attr)
 
     def __setattr__(self, name, value):
-        if name in ["scale", "_scale", "_optimizable_params"]:
+        if name in ["scale", "_scale", "_field", "_optimizable_params"]:
             object.__setattr__(self, name, value)
         else:
             setattr(object.__getattribute__(self, "_field"), name, value)
@@ -1056,7 +1062,7 @@ class SumMagneticField(_MagneticField, MutableSequence, OptimizableCollection):
         two or more MagneticFields to add together
     """
 
-    _io_attrs = _MagneticField._io_attrs_ + ["_fields"]
+    _io_attrs_ = _MagneticField._io_attrs_ + ["_fields"]
     _static_attrs = _MagneticField._static_attrs
 
     def __init__(self, *fields):
