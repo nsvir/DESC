@@ -44,9 +44,6 @@ class Optimizer(IOAble):
     method : str
         name of the optimizer to use. Options can be found as desc.optimize.optimizers
 
-    objective : ObjectiveFunction
-        objective to be optimized
-
     """
 
     _io_attrs_ = ["_method"]

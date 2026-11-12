@@ -571,6 +571,8 @@ class Transform(IOAble):
             Spectral basis of modes
         build : bool
             whether to recompute matrices now or wait until requested
+        build_pinv : bool
+            whether to recompute the pseudoinverse now or wait until requested
         method : {"auto", "direct1", "direct2", "fft"}
             method to use for computing transforms
 

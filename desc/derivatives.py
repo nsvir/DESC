@@ -24,8 +24,10 @@ class _Derivative(ABC):
     ----------
     fun : callable
         Function to be differentiated.
-    argnums : int, optional
+    argnum : int, optional
         Specifies which positional argument to differentiate with respect to
+    mode : str, optional
+        Differentiation mode. Supported values depend on the subclass.
 
     """
 
@@ -122,6 +124,10 @@ class AutoDiffDerivative(_Derivative):
         ``'hess'`` (Hessian of a scalar function),
         or ``'jvp'`` (Jacobian vector product)
         Default = ``'fwd'``
+    chunk_size : int, optional
+        If given, compute the Jacobian ``chunk_size`` columns (``'fwd'``) or
+        rows (``'rev'``) at a time instead of all at once, to reduce peak
+        memory usage. Default is ``None`` (all at once).
 
     Raises
     ------

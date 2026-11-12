@@ -684,25 +684,23 @@ class FourierRZToroidalSurface(Surface):
 
         Parameters
         ----------
-        base_surface : FourierRZToroidalSurface
-            Surface from which the constant offset surface will be found.
         offset : float
-            constant offset (in m) of the desired surface from the input surface
+            constant offset (in m) of the desired surface from this surface
             offset will be in the normal direction to the surface.
         grid : Grid, optional
             Grid object of the points on the offset surface to evaluate the
             offset points at, from which the offset surface will be created by fitting
             offset points with the basis defined by the given M and N.
             If None, defaults to a LinearGrid with M and N and NFP equal to twice the
-            base_surface.M and base_surface.N and NFP equal to base_surface.NFP
+            self.M and self.N and NFP equal to self.NFP
         M : int, optional
             Poloidal resolution of the basis used to fit the offset points
             to create the resulting constant offset surface, by default equal
-            to base_surface.M
+            to self.M
         N : int, optional
             Toroidal resolution of the basis used to fit the offset points
             to create the resulting constant offset surface, by default equal
-            to base_surface.N
+            to self.N
         full_output : bool, optional
             If True, also return a dict of useful data about the surfaces and a
             tuple where the first element is the residual from
