@@ -1,0 +1,704 @@
+desc/backend.py
+    DOC202: Function `root_scalar` has a return section in docstring, but there are no return statements or annotations
+    DOC103: Function `cond`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*operands: ]. Arguments in the docstring but not in the function signature: [operands: any].
+    DOC201: Function `scan` does not have a return section in docstring
+--------------------
+desc/basis.py
+    DOC202: Method `DoubleFourierSeries.change_resolution` has a return section in docstring, but there are no return statements or annotations
+    DOC202: Method `ZernikePolynomial.change_resolution` has a return section in docstring, but there are no return statements or annotations
+    DOC202: Method `ChebyshevDoubleFourierBasis.change_resolution` has a return section in docstring, but there are no return statements or annotations
+    DOC202: Method `FourierZernikeBasis.change_resolution` has a return section in docstring, but there are no return statements or annotations
+    DOC101: Function `zernike_norm`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `zernike_norm`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [l: , m: ]. Arguments in the docstring but not in the function signature: [l,m: int].
+    DOC101: Function `_jacobi`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_jacobi`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dx: ].
+--------------------
+desc/batching.py
+    DOC001: Function/method `_scanmap`: Potential formatting errors in docstring. Error message: Unsupported numpy docstring section: "Refrences" (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+    DOC001: Function/method `batched_vectorize`: Potential formatting errors in docstring. Error message: Unsupported numpy docstring section: "Refrences" (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+    DOC001: Function/method `jacfwd_chunked`: Potential formatting errors in docstring. Error message: Unsupported numpy docstring section: "Refrences" (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+    DOC001: Function/method `jacrev_chunked`: Potential formatting errors in docstring. Error message: Unsupported numpy docstring section: "Refrences" (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+--------------------
+desc/coils.py
+    DOC101: Function `biot_savart_hh`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `biot_savart_hh`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [coil_pts_end: , coil_pts_start: ]. Arguments in the docstring but not in the function signature: [coil_pts_start, coil_pts_end: array-like shape(m,3)].
+    DOC101: Function `biot_savart_vector_potential_hh`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `biot_savart_vector_potential_hh`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [coil_pts_end: , coil_pts_start: ]. Arguments in the docstring but not in the function signature: [coil_pts_start, coil_pts_end: array-like shape(m,3)].
+    DOC101: Method `_PrecomputedBiotSavartField.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_PrecomputedBiotSavartField.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [seg_end: , seg_start: ]. Arguments in the docstring but not in the function signature: [seg_start, seg_end: ndarray, shape(k,3) or None].
+    DOC101: Method `_Coil.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *args: ].
+    DOC101: Method `_Coil._compute_position`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil._compute_position`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Coil.to_FourierXYZ`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.to_FourierXYZ`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Coil.to_SplineXYZ`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.to_SplineXYZ`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Coil.to_FourierRZ`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.to_FourierRZ`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Coil.to_FourierPlanar`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.to_FourierPlanar`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Coil.to_FourierXY`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Coil.to_FourierXY`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `FourierRZCoil.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierRZCoil.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R_n: , Z_n: ]. Arguments in the docstring but not in the function signature: [R_n, Z_n: array-like].
+    DOC101: Method `FourierXYZCoil.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierXYZCoil.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [X_n: , Y_n: , Z_n: ]. Arguments in the docstring but not in the function signature: [X_n, Y_n, Z_n: array-like].
+    DOC101: Method `SplineXYZCoil.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SplineXYZCoil.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [X: , Y: , Z: ]. Arguments in the docstring but not in the function signature: [X, Y, Z: array-like].
+    DOC108: Method `CoilSet.__init__`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+    DOC103: Method `CoilSet.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*coils: _CoilT | list[_CoilT]]. Arguments in the docstring but not in the function signature: [coils: Coil or array-like of Coils].
+    DOC101: Method `CoilSet.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilSet.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `CoilSet._compute_position`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilSet._compute_position`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC201: Method `CoilSet._as_precomputed_source` does not have a return section in docstring
+    DOC108: Method `CoilSet.linspaced_angular`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+    DOC201: Method `CoilSet.linspaced_angular` does not have a return section in docstring
+    DOC108: Method `CoilSet.linspaced_linear`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+    DOC201: Method `CoilSet.linspaced_linear` does not have a return section in docstring
+    DOC108: Method `CoilSet.from_symmetry`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+    DOC201: Method `CoilSet.from_makegrid_coilfile` does not have a return section in docstring
+    DOC103: Method `MixedCoilSet.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*coils: ]. Arguments in the docstring but not in the function signature: [coils: Coil or array-like of Coils].
+    DOC101: Method `MixedCoilSet.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MixedCoilSet.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `MixedCoilSet._compute_position`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MixedCoilSet._compute_position`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC201: Method `MixedCoilSet._as_precomputed_source` does not have a return section in docstring
+    DOC201: Method `MixedCoilSet.from_makegrid_coilfile` does not have a return section in docstring
+--------------------
+desc/compute/_fast_ion.py
+    DOC101: Function `_little_gamma_c_Nemov`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_little_gamma_c_Nemov`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , data: , params: , profiles: , transforms: ].
+--------------------
+desc/compute/_stability.py
+    DOC101: Function `_ideal_ballooning_lambda`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_ideal_ballooning_lambda`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , data: , params: , profiles: , transforms: ].
+    DOC101: Function `_ideal_ballooning_eigenfunction`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_ideal_ballooning_eigenfunction`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , data: , params: , profiles: , transforms: ].
+    DOC101: Function `integrator`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `integrator`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [carry: , x: ].
+--------------------
+desc/compute/data_index.py
+    DOC101: Function `assign_alias_data`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `assign_alias_data`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , data: , fun: , params: , profiles: , transforms: ].
+    DOC101: Function `register_compute_fun`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `register_compute_fun`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC201: Function `register_compute_fun` does not have a return section in docstring
+--------------------
+desc/compute/utils.py
+    DOC101: Function `compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `get_transforms`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `get_transforms`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+--------------------
+desc/continuation.py
+    DOC101: Function `solve_continuation_automatic`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `solve_continuation_automatic`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ftol: , gtol: , jac_chunk_size: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol: float].
+    DOC101: Function `solve_continuation`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `solve_continuation`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ftol: , gtol: , jac_chunk_size: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol: float or array-like of float].
+--------------------
+desc/derivatives.py
+    DOC101: Method `_Derivative.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Derivative.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Derivative.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Derivative.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `_Derivative.__call__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Derivative.__call__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `AutoDiffDerivative.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AutoDiffDerivative.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `AutoDiffDerivative.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AutoDiffDerivative.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC103: Method `AutoDiffDerivative.compute_vjp`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *args: ]. Arguments in the docstring but not in the function signature: [args: tuple, kwargs: dict].
+    DOC103: Method `AutoDiffDerivative.compute_jvp`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *args: ]. Arguments in the docstring but not in the function signature: [args: tuple, kwargs: dict].
+    DOC101: Method `AutoDiffDerivative.compute_jvp2`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AutoDiffDerivative.compute_jvp2`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *args: , argnum1: , argnum2: , v1: , v2: ]. Arguments in the docstring but not in the function signature: [argnum1, argnum2: int or tuple of int, args: tuple, kwargs: dict, v1,v2: array-like or tuple of array-like].
+    DOC101: Method `AutoDiffDerivative.compute_jvp3`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AutoDiffDerivative.compute_jvp3`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *args: , argnum1: , argnum2: , argnum3: , v1: , v2: , v3: ]. Arguments in the docstring but not in the function signature: [argnum1, argnum2, argnum3: int or tuple of int, args: tuple, kwargs: dict, v1,v2,v3: array-like or tuple of array-like].
+--------------------
+desc/equilibrium/coords.py
+    DOC101: Function `map_coordinates`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `map_coordinates`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , inbasis: , outbasis: ]. Arguments in the docstring but not in the function signature: [inbasis, outbasis: tuple of str, kwargs: dict, optional].
+    DOC103: Function `_map_PEST_coordinates`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC103: Function `_map_poloidal_coordinates`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC202: Function `_map_poloidal_coordinates` has a return section in docstring, but there are no return statements or annotations
+    DOC101: Function `is_nested`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `is_nested`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [L_lmn: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [R_lmn, Z_lmn, L_lmn: ndarray, optional].
+    DOC110: Function `get_rtz_grid`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Function `get_rtz_grid`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: ].
+--------------------
+desc/equilibrium/equilibrium.py
+    DOC101: Method `Equilibrium.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Equilibrium.get_surface_at`: Docstring contains fewer arguments than in function signature.
+    DOC108: Method `Equilibrium.get_surface_at`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+    DOC103: Method `Equilibrium.get_surface_at`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [rho: float | None, theta: None, zeta: float | None]. Arguments in the docstring but not in the function signature: [rho, theta, zeta: float or None].
+    DOC101: Method `Equilibrium.get_profile`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.get_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Equilibrium.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Equilibrium.map_coordinates`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.map_coordinates`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , inbasis: , outbasis: ]. Arguments in the docstring but not in the function signature: [inbasis, outbasis: tuple of str, kwargs: dict, optional].
+    DOC101: Method `Equilibrium._get_rtz_grid`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium._get_rtz_grid`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Equilibrium._compute_iota_under_jit`: Docstring contains fewer arguments than in function signature.
+    DOC110: Method `Equilibrium._compute_iota_under_jit`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `Equilibrium._compute_iota_under_jit`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Equilibrium.is_nested`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.is_nested`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [L_lmn: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [R_lmn, Z_lmn, L_lmn: ndarray, optional].
+    DOC101: Method `Equilibrium.solve`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.solve`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ftol: , gtol: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol: float].
+    DOC101: Method `Equilibrium.optimize`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Equilibrium.optimize`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ctol: , ftol: , gtol: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol, ctol: float].
+    DOC104: Method `Equilibrium.perturb`: Arguments are the same in the docstring and the function signature, but are in a different order.
+    DOC105: Method `Equilibrium.perturb`: Argument names match, but type hints in these args do not match: deltas, objective, constraints, order, tr_ratio, weight, include_f, verbose, copy
+    DOC103: Method `EquilibriaFamily.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*args: ]. Arguments in the docstring but not in the function signature: [args: Equilibrium, dict or list of dict].
+    DOC101: Method `EquilibriaFamily.solve_continuation`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `EquilibriaFamily.solve_continuation`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ftol: , gtol: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol: float or array-like of float].
+    DOC101: Method `EquilibriaFamily.solve_continuation_automatic`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `EquilibriaFamily.solve_continuation_automatic`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ftol: , gtol: , xtol: ]. Arguments in the docstring but not in the function signature: [ftol, xtol, gtol: float].
+--------------------
+desc/equilibrium/initial_guess.py
+    DOC110: Function `set_initial_guess`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Function `set_initial_guess`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*args: ]. Arguments in the docstring but not in the function signature: [args: ].
+    DOC201: Function `set_initial_guess` does not have a return section in docstring
+--------------------
+desc/equilibrium/utils.py
+    DOC103: Function `parse_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: any].
+    DOC101: Function `parse_axis`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `parse_axis`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [surface: ].
+--------------------
+desc/examples/__init__.py
+    DOC108: Function `get`: The option `--arg-type-hints-in-signature` is `False` but there are argument type hints in the signature
+--------------------
+desc/external/agni.py
+    DOC101: Method `AgniStability.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AgniStability.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/external/neo.py
+    DOC101: Method `NeoIO.write`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `NeoIO.write`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , phi_n: , theta_n: ]. Arguments in the docstring but not in the function signature: [theta_n, phi_n: int].
+--------------------
+desc/external/terpsichore.py
+    DOC101: Function `terpsichore`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `terpsichore`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M_booz_max: , M_nyq: , N_booz_max: , N_nyq: , data_transforms: , fit_transform: ]. Arguments in the docstring but not in the function signature: [M_booz_max, N_booz_max: int, optional, M_nyq, N_nyq: int, data_transforms, fit_transform: dict, Transform].
+    DOC101: Method `TERPSICHORE.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `TERPSICHORE.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M_booz_max: , M_nyq: , N_booz_max: , N_nyq: , bounds: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ]. Arguments in the docstring but not in the function signature: [M_booz_max, N_booz_max: int, optional, M_nyq, N_nyq: int].
+--------------------
+desc/geometry/core.py
+    DOC101: Method `Curve.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Curve.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Surface.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Surface.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+--------------------
+desc/geometry/curve.py
+    DOC101: Method `FourierRZCurve.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierRZCurve.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R_n: , Z_n: ]. Arguments in the docstring but not in the function signature: [R_n, Z_n: array-like].
+    DOC101: Method `FourierXYZCurve.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierXYZCurve.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [X_n: , Y_n: , Z_n: ]. Arguments in the docstring but not in the function signature: [X_n, Y_n, Z_n: array-like].
+    DOC101: Method `FourierXYZCurve.from_values`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierXYZCurve.from_values`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [name: ].
+    DOC101: Method `FourierPlanarCurve.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierPlanarCurve.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `FourierXYCurve.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierXYCurve.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `SplineXYZCurve.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SplineXYZCurve.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [X: , Y: , Z: ]. Arguments in the docstring but not in the function signature: [X, Y, Z: array-like].
+    DOC101: Method `SplineXYZCurve.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SplineXYZCurve.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+--------------------
+desc/geometry/surface.py
+    DOC101: Method `FourierRZToroidalSurface.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierRZToroidalSurface.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M: , N: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [M, N: int or None, R_lmn, Z_lmn: array-like, shape(k,)].
+    DOC101: Method `ZernikeRZToroidalSection.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ZernikeRZToroidalSection.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [L: , M: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [L, M: int or None, R_lmn, Z_lmn: array-like, shape(k,)].
+--------------------
+desc/grid.py
+    DOC101: Method `_Grid.replace_at_axis`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Grid.replace_at_axis`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Grid.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Grid.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Grid.create_meshgrid`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Grid.create_meshgrid`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `most_rational`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `most_rational`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [a: , b: ]. Arguments in the docstring but not in the function signature: [a,b: float].
+    DOC101: Function `n_most_rational`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `n_most_rational`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [a: , b: ]. Arguments in the docstring but not in the function signature: [a, b: float].
+    DOC101: Function `find_most_rational_surfaces`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `find_most_rational_surfaces`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `find_most_distant`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `find_most_distant`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , a: , b: ]. Arguments in the docstring but not in the function signature: [a, b: float, optional].
+    DOC201: Function `find_most_distant` does not have a return section in docstring
+    DOC101: Function `find_least_rational_surfaces`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `find_least_rational_surfaces`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `_periodic_spacing`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_periodic_spacing`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [jnp: ].
+    DOC101: Function `_midpoint_spacing`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_midpoint_spacing`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [jnp: ].
+--------------------
+desc/input_reader.py
+    DOC301: Class `InputReader`: __init__() should not have a docstring; please combine it with the docstring of the class
+--------------------
+desc/integrals/_bounce_utils.py
+    DOC201: Function `bounce_points` does not have a return section in docstring
+    DOC101: Function `plot_ppoly`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `plot_ppoly`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , legend_kwargs: , return_legend: ].
+    DOC101: Function `argmin`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `argmin`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [z1: , z2: ]. Arguments in the docstring but not in the function signature: [z1, z2: jnp.ndarray].
+    DOC201: Function `mmt_for_bounce` does not have a return section in docstring
+--------------------
+desc/integrals/_interp_utils.py
+    DOC101: Function `polyroot_vec`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `polyroot_vec`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [a_max: , a_min: ]. Arguments in the docstring but not in the function signature: [a_min, a_max: jnp.ndarray].
+--------------------
+desc/integrals/bounce_integral.py
+    DOC101: Method `_Bounce.get_pitch_inv_quad`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Bounce.get_pitch_inv_quad`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC301: Class `Bounce2D`: __init__() should not have a docstring; please combine it with the docstring of the class
+    DOC101: Method `Bounce2D.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , vander: ].
+    DOC101: Method `Bounce2D.batch`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.batch`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce2D.angle`: Docstring contains fewer arguments than in function signature.
+    DOC110: Method `Bounce2D.angle`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `Bounce2D.angle`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC103: Method `Bounce2D.check_points`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict].
+    DOC101: Method `Bounce2D.integrate`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.integrate`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce2D.interp_to_argmin`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.interp_to_argmin`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce2D.plot`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.plot`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce2D.plot_theta`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce2D.plot_theta`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC110: Method `Bounce2D.plot_angle_spectrum`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `Bounce2D.plot_angle_spectrum`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: ].
+    DOC301: Class `Bounce1D`: __init__() should not have a docstring; please combine it with the docstring of the class
+    DOC101: Method `Bounce1D.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce1D.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce1D.batch`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce1D.batch`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC110: Method `Bounce1D.check_points`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `Bounce1D.check_points`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: ].
+    DOC101: Method `Bounce1D.integrate`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Bounce1D.integrate`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `Bounce1D.plot`: Docstring contains fewer arguments than in function signature.
+    DOC110: Method `Bounce1D.plot`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `Bounce1D.plot`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , l: , m: ]. Arguments in the docstring but not in the function signature: [kwargs: , l, m: int].
+    DOC101: Method `BounceOptions.guess`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BounceOptions.guess`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , Y_B: , alpha: , field_period_transits: , loop: , nufft_eps: , num_pitch: , num_quad: , num_well: , pitch_batch_size: , quad: , spline: , surf_batch_size: ].
+    DOC201: Method `BounceOptions.guess` does not have a return section in docstring
+    DOC201: Method `BounceOptions._guess_Y_B` does not have a return section in docstring
+--------------------
+desc/integrals/singularities.py
+    DOC201: Function `_chi` does not have a return section in docstring
+    DOC101: Function `_eta`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_eta`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ht: , hz: , st: , sz: , theta: , theta0: , zeta: , zeta0: ]. Arguments in the docstring but not in the function signature: [ht, hz: float, st, sz: int, theta, zeta: jnp.ndarray, theta0, zeta0: jnp.ndarray].
+    DOC201: Function `_eta` does not have a return section in docstring
+    DOC101: Method `_BIESTInterpolator.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_BIESTInterpolator.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [eval_grid: , source_grid: , st: , sz: ]. Arguments in the docstring but not in the function signature: [eval_grid, source_grid: Grid, st, sz: int].
+    DOC101: Method `_BIESTInterpolator.__call__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_BIESTInterpolator.__call__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [vander: ].
+    DOC101: Method `FFTInterpolator.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FFTInterpolator.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , eval_grid: , source_grid: , st: , sz: ]. Arguments in the docstring but not in the function signature: [eval_grid, source_grid: Grid, st, sz: int].
+    DOC101: Method `FFTInterpolator.__call__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FFTInterpolator.__call__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [vander: ].
+    DOC101: Method `DFTInterpolator.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `DFTInterpolator.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , eval_grid: , source_grid: , st: , sz: ]. Arguments in the docstring but not in the function signature: [eval_grid, source_grid: Grid, st, sz: int].
+    DOC101: Function `singular_integral`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `singular_integral`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `virtual_casing_biot_savart`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `virtual_casing_biot_savart`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+--------------------
+desc/integrals/surface_integral.py
+    DOC001: Function/method `surface_integrals_transform`: Potential formatting errors in docstring. Error message: Unsupported numpy docstring sections: "Input", "Output" (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+--------------------
+desc/io/hdf5_io.py
+    DOC301: Class `hdf5IO`: __init__() should not have a docstring; please combine it with the docstring of the class
+    DOC301: Class `hdf5Reader`: __init__() should not have a docstring; please combine it with the docstring of the class
+    DOC201: Method `hdf5Reader.read_dict` does not have a return section in docstring
+    DOC201: Method `hdf5Reader.read_list` does not have a return section in docstring
+    DOC301: Class `hdf5Writer`: __init__() should not have a docstring; please combine it with the docstring of the class
+--------------------
+desc/io/optimizable_io.py
+    DOC201: Method `IOAble.load` does not have a return section in docstring
+    DOC109: Method `IOAble.equiv`: The option `--arg-type-hints-in-docstring` is `True` but there are no type hints in the docstring arg list
+    DOC110: Method `IOAble.equiv`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+--------------------
+desc/io/pickle_io.py
+    DOC301: Class `PickleReader`: __init__() should not have a docstring; please combine it with the docstring of the class
+    DOC201: Method `PickleReader.read_obj` does not have a return section in docstring
+    DOC301: Class `PickleWriter`: __init__() should not have a docstring; please combine it with the docstring of the class
+--------------------
+desc/magnetic_fields/_core.py
+    DOC202: Method `_MagneticField.save_mgrid` has a return section in docstring, but there are no return statements or annotations
+    DOC202: Method `MagneticFieldFromUser.compute_magnetic_vector_potential` has a return section in docstring, but there are no return statements or annotations
+    DOC103: Method `SumMagneticField.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*fields: ]. Arguments in the docstring but not in the function signature: [fields: MagneticField].
+    DOC202: Method `PoloidalMagneticField.compute_magnetic_vector_potential` has a return section in docstring, but there are no return statements or annotations
+    DOC201: Method `SplineMagneticField.from_mgrid` does not have a return section in docstring
+    DOC101: Method `SplineMagneticField.from_field`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SplineMagneticField.from_field`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R: , Z: , phi: ]. Arguments in the docstring but not in the function signature: [R, phi, Z: ndarray].
+    DOC201: Method `SplineMagneticField.from_field` does not have a return section in docstring
+    DOC202: Method `ScalarPotentialField.compute_magnetic_vector_potential` has a return section in docstring, but there are no return statements or annotations
+    DOC101: Function `field_line_integrate`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `field_line_integrate`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [atol: , r0: , rtol: , z0: ]. Arguments in the docstring but not in the function signature: [r0, z0: array-like, rtol, atol: float].
+    DOC101: Function `_field_line_integrate`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_field_line_integrate`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bs_chunk_size: , chunk_size: , field: , max_steps: , min_step_size: , options: , params: , phis: , r0: , return_aux: , solver: , source_grid: , use_precomputed_source: , z0: ].
+    DOC201: Function `_field_line_integrate` does not have a return section in docstring
+--------------------
+desc/magnetic_fields/_current_potential.py
+    DOC101: Method `CurrentPotentialField.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CurrentPotentialField.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M: , N: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [M, N: int or None, R_lmn, Z_lmn: array-like, shape(k,)].
+    DOC201: Method `CurrentPotentialField.from_surface` does not have a return section in docstring
+    DOC101: Method `FourierCurrentPotentialField.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierCurrentPotentialField.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M: , M_Phi: , N: , N_Phi: , R_lmn: , Z_lmn: ]. Arguments in the docstring but not in the function signature: [M, N: int or None, M_Phi, N_Phi: int or None, R_lmn, Z_lmn: array-like, shape(k,)].
+    DOC101: Method `FourierCurrentPotentialField.from_surface`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierCurrentPotentialField.from_surface`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M_Phi: , N_Phi: ]. Arguments in the docstring but not in the function signature: [M_Phi, N_Phi: int or None].
+    DOC201: Method `FourierCurrentPotentialField.from_surface` does not have a return section in docstring
+    DOC101: Function `_compute_A_or_B_from_CurrentPotentialField`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_compute_A_or_B_from_CurrentPotentialField`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [transforms: ].
+    DOC101: Function `_find_current_potential_contours`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_find_current_potential_contours`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [net_poloidal_current: , net_toroidal_current: ]. Arguments in the docstring but not in the function signature: [net_poloidal_current, net_toroidal_current: float, optional].
+--------------------
+desc/magnetic_fields/_dommaschk.py
+    DOC201: Method `DommaschkPotentialField.fit_magnetic_field` does not have a return section in docstring
+    DOC101: Function `V_m_l`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `V_m_l`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R: , Z: , phi: ]. Arguments in the docstring but not in the function signature: [R,phi,Z: array-like].
+    DOC101: Function `dommaschk_potential`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `dommaschk_potential`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R: , Z: , phi: ]. Arguments in the docstring but not in the function signature: [R,phi,Z: sympy.vector.scalar.BaseScalar].
+--------------------
+desc/nestor.py
+    DOC101: Function `eval_surface_geometry`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `eval_surface_geometry`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [ntheta: , nzeta: ]. Arguments in the docstring but not in the function signature: [ntheta, nzeta: int].
+    DOC101: Function `compute_T_S`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `compute_T_S`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [mf: , nf: , ntheta: , nzeta: , sym: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: integer].
+    DOC101: Function `compute_analytic_integrals`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `compute_analytic_integrals`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [mf: , nf: , ntheta: , nzeta: , sym: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: integer].
+    DOC101: Function `regularizedFourierTransforms`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `regularizedFourierTransforms`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [mf: , nf: , ntheta: , nzeta: , sym: , tan_theta: , tan_zeta: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: integer, tan_theta, tan_zeta: ndarray].
+    DOC101: Function `compute_scalar_magnetic_potential`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `compute_scalar_magnetic_potential`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [mf: , nf: , ntheta: , nzeta: , sym: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: integer].
+    DOC101: Function `compute_vacuum_magnetic_field`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `compute_vacuum_magnetic_field`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [mf: , nf: , ntheta: , nzeta: , sym: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: integer].
+    DOC101: Method `Nestor.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Nestor.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M: , N: , ntheta: , nzeta: ]. Arguments in the docstring but not in the function signature: [M, N: integer, ntheta, nzeta: int].
+--------------------
+desc/objectives/_bootstrap.py
+    DOC101: Method `BootstrapRedlConsistency.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BootstrapRedlConsistency.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_coils.py
+    DOC101: Method `_CoilObjective.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC110: Method `_CoilObjective.__init__`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `_CoilObjective.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: ]. Arguments in the docstring but not in the function signature: ["coil" if the objective returns a single scalar per coil, and "node": , Subclasses must define a static attribute "_broadcast_input." Equals: , To be compatible with masking, compute function should apply the mask: , if it returns a scalar at every grid point. It is case-insensitive.: , self._coilset_tree["objective_mask"] before returning data.: ].
+    DOC101: Method `CoilLength.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilLength.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilCurvature.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilCurvature.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilTorsion.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilTorsion.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilCurrentLength.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilCurrentLength.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilIntegratedCurvature.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilIntegratedCurvature.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilSetMinDistance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilSetMinDistance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `PlasmaCoilSetDistanceBound.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PlasmaCoilSetDistanceBound.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `PlasmaCoilSetMinDistance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PlasmaCoilSetMinDistance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilArclengthVariance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilArclengthVariance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `QuadraticFlux.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `QuadraticFlux.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , jac_chunk_size: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC103: Method `QuadraticFlux.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*field_params: ]. Arguments in the docstring but not in the function signature: [field_params: dict].
+    DOC101: Method `SurfaceQuadraticFlux.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SurfaceQuadraticFlux.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , jac_chunk_size: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `ToroidalFlux.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ToroidalFlux.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `LinkingCurrentConsistency.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `LinkingCurrentConsistency.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CoilSetLinkingNumber.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CoilSetLinkingNumber.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `SurfaceCurrentRegularization.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SurfaceCurrentRegularization.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_equilibrium.py
+    DOC101: Method `ForceBalance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ForceBalance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `ForceBalanceAnisotropic.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ForceBalanceAnisotropic.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `RadialForceBalance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `RadialForceBalance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `HelicalForceBalance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `HelicalForceBalance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Energy.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Energy.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `CurrentDensity.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CurrentDensity.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_free_boundary.py
+    DOC101: Method `VacuumBoundaryError.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `VacuumBoundaryError.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC103: Method `VacuumBoundaryError.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*field_params: ]. Arguments in the docstring but not in the function signature: [field_params: dict].
+    DOC101: Method `BoundaryError.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BoundaryError.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , eval_grid: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , source_grid: , target: , weight: ]. Arguments in the docstring but not in the function signature: [source_grid, eval_grid: Grid, optional].
+    DOC103: Method `BoundaryError.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*params: ]. Arguments in the docstring but not in the function signature: [params: dict].
+    DOC101: Method `BoundaryErrorNESTOR.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BoundaryErrorNESTOR.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , mf: , name: , nf: , normalize: , normalize_target: , ntheta: , nzeta: , target: , weight: ]. Arguments in the docstring but not in the function signature: [mf, nf: integer, ntheta, nzeta: int].
+--------------------
+desc/objectives/_generic.py
+    DOC101: Method `ExternalObjective.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ExternalObjective.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `GenericObjective.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `GenericObjective.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `LinearObjectiveFromUser.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `LinearObjectiveFromUser.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , jac_chunk_size: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `ObjectiveFromUser.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ObjectiveFromUser.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `DeflationOperator.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `DeflationOperator.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_geometry.py
+    DOC101: Method `AspectRatio.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AspectRatio.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Elongation.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Elongation.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Volume.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Volume.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `PlasmaVesselDistance.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PlasmaVesselDistance.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , bounds: , deriv_mode: , eq_fixed: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , surface_fixed: , target: , weight: ]. Arguments in the docstring but not in the function signature: [eq_fixed, surface_fixed: bool, optional].
+    DOC101: Method `NeutronWallLoading.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `NeutronWallLoading.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , eq_fixed: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , surface_fixed: , target: , weight: ]. Arguments in the docstring but not in the function signature: [eq_fixed, surface_fixed: bool, optional].
+    DOC101: Method `MeanCurvature.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MeanCurvature.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `PrincipalCurvature.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PrincipalCurvature.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `BScaleLength.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BScaleLength.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `GoodCoordinates.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `GoodCoordinates.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `MirrorRatio.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MirrorRatio.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_omnigenity.py
+    DOC101: Method `QuasisymmetryBoozer.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `QuasisymmetryBoozer.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `QuasisymmetryTwoTerm.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `QuasisymmetryTwoTerm.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `QuasisymmetryTripleProduct.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `QuasisymmetryTripleProduct.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Omnigenity.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Omnigenity.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Isodynamicity.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Isodynamicity.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_power_balance.py
+    DOC101: Method `FusionPower.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FusionPower.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `HeatingPowerISS04.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `HeatingPowerISS04.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_profiles.py
+    DOC101: Method `Pressure.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Pressure.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `RotationalTransform.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `RotationalTransform.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `Shear.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `Shear.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `ToroidalCurrent.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ToroidalCurrent.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+--------------------
+desc/objectives/_stability.py
+    DOC101: Method `MercierStability.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MercierStability.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `MagneticWell.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MagneticWell.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC101: Method `BallooningStability.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `BallooningStability.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , normalize: , normalize_target: , target: , w0: , w1: , weight: ]. Arguments in the docstring but not in the function signature: [w0, w1: float].
+--------------------
+desc/objectives/getters.py
+    DOC103: Function `_get_NAE_constraints`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [order: ].
+--------------------
+desc/objectives/linear_objectives.py
+    DOC103: Method `ShareParameters.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*params: ]. Arguments in the docstring but not in the function signature: [params: dict].
+--------------------
+desc/objectives/nae_utils.py
+    DOC001: Function/method `make_RZ_cons_2nd_order`: Potential formatting errors in docstring. Error message: Section 'Parameters' is not empty but nothing was parsed. (Note: DOC001 could trigger other unrelated violations under this function/method too. Please fix the docstring formatting first.)
+--------------------
+desc/objectives/objective_funs.py
+    DOC201: Method `ObjectiveFunction.jvp_scaled` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.jvp_scaled_error` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.jvp_unscaled` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.vjp_scaled` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.vjp_scaled_error` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.vjp_unscaled` does not have a return section in docstring
+    DOC201: Method `ObjectiveFunction.compile` does not have a return section in docstring
+    DOC101: Method `_Objective.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Objective.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [bounds: , deriv_mode: , jac_chunk_size: , loss_function: , name: , normalize: , normalize_target: , target: , weight: ].
+    DOC201: Method `_Objective.jvp_scaled` does not have a return section in docstring
+    DOC201: Method `_Objective.jvp_scaled_error` does not have a return section in docstring
+    DOC201: Method `_Objective.jvp_unscaled` does not have a return section in docstring
+    DOC101: Method `_Objective.print_value`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Objective.print_value`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC201: Method `_Objective.print_value` does not have a return section in docstring
+--------------------
+desc/objectives/utils.py
+    DOC103: Function `combine_args`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*objectives: ]. Arguments in the docstring but not in the function signature: [objectives: ObjectiveFunction].
+    DOC101: Function `check_if_points_are_inside_perimeter`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `check_if_points_are_inside_perimeter`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R: , Rcheck: , Z: , Zcheck: ]. Arguments in the docstring but not in the function signature: [R,Z: ndarray, Rcheck, Zcheck: ndarray].
+--------------------
+desc/optimizable.py
+    DOC101: Function `optimizable_parameter`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `optimizable_parameter`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [f: ].
+    DOC201: Function `optimizable_parameter` does not have a return section in docstring
+--------------------
+desc/optimize/_constraint_wrappers.py
+    DOC201: Method `LinearConstraintProjection.jvp_scaled` does not have a return section in docstring
+    DOC201: Method `LinearConstraintProjection.jvp_scaled_error` does not have a return section in docstring
+    DOC201: Method `LinearConstraintProjection.jvp_unscaled` does not have a return section in docstring
+    DOC201: Method `LinearConstraintProjection.vjp_scaled` does not have a return section in docstring
+    DOC201: Method `LinearConstraintProjection.vjp_scaled_error` does not have a return section in docstring
+    DOC201: Method `LinearConstraintProjection.vjp_unscaled` does not have a return section in docstring
+    DOC101: Method `ProximalProjection.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ProximalProjection.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [perturb_options: , solve_options: ]. Arguments in the docstring but not in the function signature: [perturb_options, solve_options: dict].
+    DOC201: Method `ProximalProjection._update_equilibrium` does not have a return section in docstring
+    DOC201: Method `ProximalProjection.jvp_scaled` does not have a return section in docstring
+    DOC201: Method `ProximalProjection.jvp_scaled_error` does not have a return section in docstring
+    DOC201: Method `ProximalProjection.jvp_unscaled` does not have a return section in docstring
+--------------------
+desc/optimize/bound_utils.py
+    DOC101: Function `cl_scaling_vector`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `cl_scaling_vector`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [lb: , ub: ]. Arguments in the docstring but not in the function signature: [lb, ub: ndarray].
+    DOC101: Function `step_size_to_bound`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `step_size_to_bound`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [lb: , ub: ]. Arguments in the docstring but not in the function signature: [lb, ub: ndarray].
+    DOC101: Function `find_active_constraints`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `find_active_constraints`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [lb: , rtol: , ub: ]. Arguments in the docstring but not in the function signature: [lb, ub: ndarray].
+    DOC101: Function `minimize_quadratic_1d`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `minimize_quadratic_1d`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [a: , b: , c: , lb: , ub: ].
+    DOC101: Function `intersect_trust_region`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `intersect_trust_region`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [Delta: , s: , x: ].
+--------------------
+desc/optimize/optimizer.py
+    DOC101: Function `register_optimizer`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `register_optimizer`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC201: Function `register_optimizer` does not have a return section in docstring
+--------------------
+desc/optimize/tr_subproblems.py
+    DOC101: Function `solve_trust_region_dogleg`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `solve_trust_region_dogleg`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `solve_trust_region_2d_subspace`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `solve_trust_region_2d_subspace`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `update_tr_radius`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `update_tr_radius`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [decrease_ratio: , decrease_threshold: , increase_ratio: , increase_threshold: ]. Arguments in the docstring but not in the function signature: [decrease_threshold, decrease_ratio: float, increase_threshold, increase_ratio: float].
+--------------------
+desc/optimize/utils.py
+    DOC101: Function `inequality_to_bounds`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `inequality_to_bounds`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [*args: , fun: , grad: , hess: ]. Arguments in the docstring but not in the function signature: [fun, grad, hess: callable].
+--------------------
+desc/particles.py
+    DOC101: Method `AbstractParticleInitializer._return_particles`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `AbstractParticleInitializer._return_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , params: ].
+    DOC103: Method `ManualParticleInitializerFlux.init_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC103: Method `ManualParticleInitializerLab.init_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC101: Method `CurveParticleInitializer.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `CurveParticleInitializer.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [xi_max: , xi_min: ]. Arguments in the docstring but not in the function signature: [xi_min, xi_max: float].
+    DOC103: Method `CurveParticleInitializer.init_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC101: Method `SurfaceParticleInitializer.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SurfaceParticleInitializer.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [xi_max: , xi_min: ]. Arguments in the docstring but not in the function signature: [xi_min, xi_max: float].
+    DOC103: Method `SurfaceParticleInitializer.init_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: dict, optional].
+    DOC101: Function `trace_particles`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `trace_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [atol: , rtol: ]. Arguments in the docstring but not in the function signature: [rtol, atol: float, optional].
+    DOC101: Function `_trace_particles`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `_trace_particles`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [adjoint: , chunk_size: , field: , max_steps: , min_step_size: , model: , options: , params: , return_aux: , solver: , throw: , ts: , use_precomputed_source: ].
+    DOC201: Function `_trace_particles` does not have a return section in docstring
+--------------------
+desc/perturbations.py
+    DOC101: Function `get_deltas`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `get_deltas`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [things1: , things2: ]. Arguments in the docstring but not in the function signature: [things1, things2: dict].
+    DOC101: Function `optimal_perturb`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `optimal_perturb`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dL: , dPsi: , dR: , dRb: , dZ: , dZb: , di: , dp: ]. Arguments in the docstring but not in the function signature: [dR, dZ, dL, dp, di, dPsi, dRb, dZb: ndarray or bool, optional].
+--------------------
+desc/plotting.py
+    DOC109: Function `_get_grid`: The option `--arg-type-hints-in-docstring` is `True` but there are no type hints in the docstring arg list
+    DOC110: Function `_get_grid`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Function `_get_grid`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: ].
+    DOC101: Function `poincare_plot`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `poincare_plot`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R0: , Z0: ]. Arguments in the docstring but not in the function signature: [R0, Z0: array-like].
+    DOC101: Function `plot_field_lines`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `plot_field_lines`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [R0: , Z0: ]. Arguments in the docstring but not in the function signature: [R0, Z0: array-like].
+    DOC104: Function `plot_particle_trajectories`: Arguments are the same in the docstring and the function signature, but are in a different order.
+    DOC105: Function `plot_particle_trajectories`: Argument names match, but type hints in these args do not match: field, model, initializer, ts, end_position, return_data, fig, **kwargs
+--------------------
+desc/profiles.py
+    DOC101: Method `_Profile.to_fourierzernike`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Profile.to_fourierzernike`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [L: , M: , N: ]. Arguments in the docstring but not in the function signature: [L, M, N: int].
+    DOC101: Method `_Profile.to_mtanh`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `_Profile.to_mtanh`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `ScaledProfile.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ScaledProfile.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `ScaledProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ScaledProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `PowerProfile.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PowerProfile.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `PowerProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PowerProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `SumProfile.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SumProfile.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *profiles: ]. Arguments in the docstring but not in the function signature: [profiles: Profile].
+    DOC101: Method `SumProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SumProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `ProductProfile.__init__`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ProductProfile.__init__`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: , *profiles: ]. Arguments in the docstring but not in the function signature: [profiles: Profile].
+    DOC101: Method `ProductProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `ProductProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `PowerSeriesProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `PowerSeriesProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `TwoPowerProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `TwoPowerProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `SplineProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `SplineProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `HermiteSplineProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `HermiteSplineProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `MTanhProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `MTanhProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC110: Method `MTanhProfile.from_values`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC103: Method `MTanhProfile.from_values`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ]. Arguments in the docstring but not in the function signature: [kwargs: ].
+    DOC101: Method `FourierZernikeProfile.compute`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierZernikeProfile.compute`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [dr: , dt: , dz: ]. Arguments in the docstring but not in the function signature: [dr, dt, dz: int].
+    DOC101: Method `FourierZernikeProfile.from_values`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `FourierZernikeProfile.from_values`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [L: , M: , N: , r: , t: , z: ]. Arguments in the docstring but not in the function signature: [L, M, N: int, r, t, z: array-like, shape(k,)].
+--------------------
+desc/random.py
+    DOC101: Function `random_surface`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `random_surface`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M: , N: , R_scale: , Z_scale: ]. Arguments in the docstring but not in the function signature: [M, N: int, R_scale, Z_scale: float or tuple].
+--------------------
+desc/utils.py
+    DOC109: Function `equals`: The option `--arg-type-hints-in-docstring` is `True` but there are no type hints in the docstring arg list
+    DOC110: Function `equals`: The option `--arg-type-hints-in-docstring` is `True` but not all args in the docstring arg list have type hints
+    DOC101: Function `is_broadcastable`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `is_broadcastable`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [shp1: , shp2: ]. Arguments in the docstring but not in the function signature: [shp1, shp2: tuple of int].
+    DOC101: Function `flatten_mat`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `flatten_mat`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [y: ].
+    DOC201: Function `safenorm` does not have a return section in docstring
+    DOC201: Function `safenormalize` does not have a return section in docstring
+    DOC101: Function `safediv`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `safediv`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [a: , b: ]. Arguments in the docstring but not in the function signature: [a, b: ndarray].
+    DOC201: Function `safediv` does not have a return section in docstring
+    DOC101: Function `rotation_matrix`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `rotation_matrix`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Function `xyz2rpz_vec`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `xyz2rpz_vec`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [phi: , x: , y: ]. Arguments in the docstring but not in the function signature: [x, y, phi: ndarray, shape(...,)].
+    DOC101: Function `rpz2xyz_vec`: Docstring contains fewer arguments than in function signature.
+    DOC103: Function `rpz2xyz_vec`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [phi: , x: , y: ]. Arguments in the docstring but not in the function signature: [x, y, phi: ndarray, shape(n,)].
+--------------------
+desc/vmec.py
+    DOC101: Method `VMECIO.save`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `VMECIO.save`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [M_grid: , M_nyq: , N_grid: , N_nyq: ]. Arguments in the docstring but not in the function signature: [M_grid, N_grid: int, M_nyq, N_nyq: int].
+    DOC202: Method `VMECIO.save` has a return section in docstring, but there are no return statements or annotations
+    DOC101: Method `VMECIO.write_vmec_input`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `VMECIO.write_vmec_input`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `VMECIO.compute_coord_surfaces`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `VMECIO.compute_coord_surfaces`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+    DOC101: Method `VMECIO.plot_vmec_comparison`: Docstring contains fewer arguments than in function signature.
+    DOC103: Method `VMECIO.plot_vmec_comparison`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [**kwargs: ].
+--------------------

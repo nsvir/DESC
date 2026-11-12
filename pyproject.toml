@@ -3,3 +3,21 @@
 # https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
 requires = ["setuptools>=42", "versioneer-518"]
 build-backend = "setuptools.build_meta"
+
+[tool.pydoclint]
+# Checks that docstring "Parameters" sections match function signatures.
+# Run with: pydoclint desc/   (picks up this config automatically)
+style = "numpy"
+# Types live in the docstring, not (always) in the signature.
+arg-type-hints-in-signature = false
+arg-type-hints-in-docstring = true
+check-return-types = false
+check-yield-types = false
+skip-checking-raises = true
+check-class-attributes = false
+# Existing violations are listed in the baseline and ignored, so only new
+# ones fail. Many are false positives: grouped args ("x, y : float"), and
+# parameters appended at runtime by collect_docs() in objectives.
+# Regenerate after fixing some: pydoclint desc/ --generate-baseline=True
+baseline = "devtools/pydoclint-baseline.txt"
+auto-regenerate-baseline = false
